@@ -1,10 +1,3 @@
-"""
-Evaluation Metrics Module (Section 2.3)
-
-Computes precision, recall, F1 score and provides
-detailed performance analysis.
-"""
-
 import pandas as pd
 import numpy as np
 from typing import List, Dict, Tuple
@@ -15,20 +8,7 @@ def compute_metrics(
     predicted_matches: List[Dict],
     ground_truth: Dict[str, str]
 ) -> Dict[str, float]:
-    """Compute precision, recall, and F1 score.
-
-    Precision = |correctly matched| / |all system matches|
-    Recall = |correctly matched| / |all transactions that should match|
-    F1 = 2 * (Precision * Recall) / (Precision + Recall)
-
-    Args:
-        predicted_matches: List of match dicts with 'bank_id' and 'check_id'
-        ground_truth: Dict mapping bank_id -> check_id (true pairs)
-
-    Returns:
-        Dict with 'precision', 'recall', 'f1', 'correct', 'total_predicted',
-        'total_actual'
-    """
+    
     correct = 0
     total_predicted = len(predicted_matches)
     total_actual = len(ground_truth)
@@ -59,17 +39,7 @@ def analyze_errors(
     bank_df: pd.DataFrame,
     check_df: pd.DataFrame
 ) -> Dict:
-    """Analyze which types of matches are most challenging.
-
-    Args:
-        predicted_matches: Predicted match list
-        ground_truth: True mapping
-        bank_df: Bank DataFrame
-        check_df: Check register DataFrame
-
-    Returns:
-        Dict with error analysis details
-    """
+    
     errors = []
     correct_matches = []
 
@@ -122,22 +92,7 @@ def learning_curve(
     unique_matches: List[Dict],
     steps: List[float] = None
 ) -> List[Dict]:
-    """Show how performance improves with more training data.
-
-    Simulates the iterative learning process by progressively adding
-    validated matches to the training set.
-
-    Args:
-        bank_df: Bank DataFrame
-        check_df: Check register DataFrame
-        ground_truth: True mapping
-        ml_matcher: MLMatcher instance
-        unique_matches: Already-matched unique pairs
-        steps: Fraction of unique matches to use as training (default: 0.2 to 1.0)
-
-    Returns:
-        List of dicts with 'training_fraction', 'n_training', and metrics
-    """
+    
     if steps is None:
         steps = [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
 
@@ -191,17 +146,7 @@ def generate_report(
     learning_results: List[Dict],
     feature_weights: Dict[str, float]
 ) -> str:
-    """Generate a human-readable performance report.
-
-    Args:
-        metrics: Overall metrics dict
-        error_analysis: Error analysis dict
-        learning_results: Learning curve results
-        feature_weights: Current feature weights
-
-    Returns:
-        Formatted report string
-    """
+    
     lines = []
     lines.append("=" * 70)
     lines.append("FINANCIAL RECONCILIATION SYSTEM - PERFORMANCE REPORT")

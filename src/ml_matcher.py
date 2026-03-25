@@ -1,13 +1,3 @@
-"""
-ML-Based Matching Module (Section 2.2)
-
-Hybrid approach (Option C) combining:
-1. TF-IDF + SVD text similarity (inspired by the paper)
-2. Numerical feature similarity (amounts, dates)
-3. Hungarian algorithm for optimal 1-to-1 assignment
-4. Iterative learning from validated matches
-"""
-
 import pandas as pd
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -19,20 +9,9 @@ from typing import List, Dict, Tuple, Optional
 
 
 class MLMatcher:
-    """Machine learning-based transaction matcher.
-
-    Uses a hybrid approach combining text embeddings (TF-IDF + SVD),
-    numerical similarity features, and the Hungarian algorithm for
-    optimal assignment. Supports iterative learning from validated matches.
-    """
 
     def __init__(self, svd_components: int = 50, random_state: int = 42):
-        """Initialize the ML matcher.
-
-        Args:
-            svd_components: Number of SVD dimensions for text embeddings
-            random_state: Random seed for reproducibility
-        """
+        
         self.svd_components = svd_components
         self.random_state = random_state
         self.tfidf = TfidfVectorizer(
@@ -55,12 +34,7 @@ class MLMatcher:
         self.is_fitted = False
 
     def fit(self, bank_df: pd.DataFrame, check_df: pd.DataFrame):
-        """Fit the TF-IDF vectorizer and SVD on all descriptions.
-
-        Args:
-            bank_df: Preprocessed bank statements
-            check_df: Preprocessed check register
-        """
+        
         all_descriptions = pd.concat([
             bank_df['description_clean'],
             check_df['description_clean']
@@ -78,15 +52,7 @@ class MLMatcher:
         bank_df: pd.DataFrame,
         check_df: pd.DataFrame
     ) -> np.ndarray:
-        """Compute combined similarity matrix between bank and check transactions.
-
-        Args:
-            bank_df: Bank transactions to match
-            check_df: Check register transactions to match
-
-        Returns:
-            Similarity matrix of shape (len(bank_df), len(check_df))
-        """
+        
         if not self.is_fitted:
             self.fit(bank_df, check_df)
 
@@ -119,17 +85,6 @@ class MLMatcher:
         exclude_bank_ids: set = None,
         exclude_check_ids: set = None
     ) -> List[Dict]:
-        """Find optimal 1-to-1 matches using the Hungarian algorithm.
-
-        Args:
-            bank_df: Bank transactions
-            check_df: Check register transactions
-            exclude_bank_ids: Bank IDs already matched (to skip)
-            exclude_check_ids: Check IDs already matched (to skip)
-
-        Returns:
-            List of match dictionaries with confidence scores
-        """
         # Filter out already-matched transactions
         if exclude_bank_ids:
             bank_df = bank_df[~bank_df['transaction_id'].isin(exclude_bank_ids)].copy()
@@ -183,23 +138,10 @@ class MLMatcher:
         return matches
 
     def add_validated_matches(self, validated: List[Dict]):
-        """Add validated match pairs to improve future matching.
-
-        Uses validated pairs to learn better feature weights via
-        gradient-free optimization.
-
-        Args:
-            validated: List of validated match dicts with 'is_correct' flag
-        """
         self.validated_matches.extend(validated)
         self._update_weights()
 
     def _update_weights(self):
-        """Re-optimize feature weights based on validated matches.
-
-        For correct matches, we increase the weight of features with
-        high values; for incorrect matches, we decrease them.
-        """
         if len(self.validated_matches) < 5:
             return
 
@@ -245,15 +187,6 @@ class MLMatcher:
     def _compute_text_similarity(
         self, bank_df: pd.DataFrame, check_df: pd.DataFrame
     ) -> np.ndarray:
-        """Compute text similarity using TF-IDF + SVD embeddings.
-
-        Args:
-            bank_df: Bank transactions
-            check_df: Check register transactions
-
-        Returns:
-            Similarity matrix (n_bank x n_check)
-        """
         bank_tfidf = self.tfidf.transform(bank_df['description_clean'])
         check_tfidf = self.tfidf.transform(check_df['description_clean'])
 
@@ -269,15 +202,6 @@ class MLMatcher:
     def _compute_amount_similarity(
         self, bank_df: pd.DataFrame, check_df: pd.DataFrame
     ) -> np.ndarray:
-        """Compute amount similarity using Gaussian kernel.
-
-        Args:
-            bank_df: Bank transactions
-            check_df: Check register transactions
-
-        Returns:
-            Similarity matrix (n_bank x n_check)
-        """
         bank_amounts = bank_df['amount'].values.reshape(-1, 1)
         check_amounts = check_df['amount'].values.reshape(1, -1)
 
@@ -294,15 +218,6 @@ class MLMatcher:
     def _compute_date_similarity(
         self, bank_df: pd.DataFrame, check_df: pd.DataFrame
     ) -> np.ndarray:
-        """Compute date similarity using exponential decay.
-
-        Args:
-            bank_df: Bank transactions
-            check_df: Check register transactions
-
-        Returns:
-            Similarity matrix (n_bank x n_check)
-        """
         bank_dates = bank_df['date'].values.astype('datetime64[D]').astype(int).reshape(-1, 1)
         check_dates = check_df['date'].values.astype('datetime64[D]').astype(int).reshape(1, -1)
 
@@ -319,15 +234,7 @@ class MLMatcher:
     def _compute_type_similarity(
         self, bank_df: pd.DataFrame, check_df: pd.DataFrame
     ) -> np.ndarray:
-        """Compute transaction type similarity (binary match).
 
-        Args:
-            bank_df: Bank transactions
-            check_df: Check register transactions
-
-        Returns:
-            Similarity matrix (n_bank x n_check) with values 0 or 1
-        """
         bank_types = bank_df['type_normalized'].values.reshape(-1, 1)
         check_types = check_df['type_normalized'].values.reshape(1, -1)
 
@@ -339,9 +246,5 @@ class MLMatcher:
         return sim
 
     def get_feature_weights(self) -> Dict[str, float]:
-        """Return current feature weights.
-
-        Returns:
-            Dictionary of feature name -> weight
-        """
+        
         return self.feature_weights.copy()

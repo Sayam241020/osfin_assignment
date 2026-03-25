@@ -1,10 +1,3 @@
-"""
-Reconciliation System Orchestrator
-
-Ties together all components: data loading, unique matching,
-ML-based matching, evaluation, and reporting.
-"""
-
 import os
 import pandas as pd
 from typing import Dict, List, Tuple
@@ -16,15 +9,6 @@ from src.evaluator import compute_metrics, analyze_errors, learning_curve, gener
 
 
 class ReconciliationSystem:
-    """End-to-end financial reconciliation system.
-
-    Workflow:
-    1. Load and preprocess data
-    2. Phase 1: Match unique amounts (high confidence baseline)
-    3. Phase 2: ML-based matching for remaining transactions
-    4. Phase 3: Iterative learning using validated matches
-    5. Evaluate and report results
-    """
 
     def __init__(
         self,
@@ -33,14 +17,7 @@ class ReconciliationSystem:
         svd_components: int = 50,
         verbose: bool = True
     ):
-        """Initialize the reconciliation system.
-
-        Args:
-            bank_path: Path to bank_statements.csv
-            check_path: Path to check_register.csv
-            svd_components: SVD dimensionality for text embeddings
-            verbose: Whether to print progress messages
-        """
+        
         self.bank_path = bank_path
         self.check_path = check_path
         self.svd_components = svd_components
@@ -57,16 +34,11 @@ class ReconciliationSystem:
         self.learning_results = None
 
     def log(self, msg: str):
-        """Print a log message if verbose mode is on."""
         if self.verbose:
             print(f"[RECON] {msg}")
 
     def run(self) -> Dict:
-        """Execute the full reconciliation pipeline.
-
-        Returns:
-            Dict with metrics and results summary
-        """
+        
         self.log("=" * 60)
         self.log("FINANCIAL RECONCILIATION SYSTEM")
         self.log("=" * 60)
@@ -125,7 +97,6 @@ class ReconciliationSystem:
                 self.log(f"    {f['bank_id']} -> {f['check_id']}: {f.get('flag', 'N/A')}")
 
     def _ml_match(self):
-        """Phase 2: ML-based matching for remaining transactions."""
         self.log("\nPhase 2: ML-Based Matching...")
 
         # Initialize and fit the ML matcher
@@ -151,13 +122,7 @@ class ReconciliationSystem:
         self.log(f"  Combined F1:        {metrics['f1']:.4f}")
 
     def _iterative_learning(self, rounds: int = 3):
-        """Phase 3: Iterative learning from validated matches.
-
-        Simulates the match -> review -> improve cycle by:
-        1. Using unique matches as ground truth training data
-        2. Re-weighting features based on match accuracy
-        3. Re-matching remaining transactions
-        """
+        
         self.log("\nPhase 3: Iterative Learning...")
 
         matched_bank_ids = {m['bank_id'] for m in self.unique_matches}
@@ -200,7 +165,6 @@ class ReconciliationSystem:
         )
 
     def _learning_curve(self):
-        """Compute learning curve showing improvement with training data."""
         self.log("\nPhase 5: Learning Curve Analysis...")
         self.learning_results = learning_curve(
             self.bank_df, self.check_df,
@@ -219,11 +183,7 @@ class ReconciliationSystem:
         return report
 
     def save_results(self, output_dir: str = "results"):
-        """Save matches and report to files.
-
-        Args:
-            output_dir: Directory to save results
-        """
+        
         os.makedirs(output_dir, exist_ok=True)
 
         # Save matches CSV

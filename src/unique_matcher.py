@@ -1,9 +1,3 @@
-"""
-Unique Amount Matching Module (Section 2.1)
-
-Matches transactions where the amount is unique across both datasets,
-providing high-confidence matches as a baseline.
-"""
 
 import pandas as pd
 import numpy as np
@@ -15,22 +9,7 @@ def find_unique_amount_matches(
     check_df: pd.DataFrame,
     date_threshold_days: int = 10
 ) -> Tuple[List[Dict], List[Dict]]:
-    """Match transactions with unique amounts across both sources.
-
-    A transaction amount is considered "unique" if it appears exactly once
-    in the bank statements AND exactly once in the check register.
-
-    Args:
-        bank_df: Preprocessed bank statements DataFrame
-        check_df: Preprocessed check register DataFrame
-        date_threshold_days: Maximum acceptable date difference before flagging
-
-    Returns:
-        Tuple of (matched_pairs, flagged_pairs):
-            matched_pairs: list of dicts with match info and confidence
-            flagged_pairs: subset of matches with potential issues
-    """
-    # Count occurrences of each amount in both sources
+    
     bank_amt_counts = bank_df['amount'].value_counts()
     check_amt_counts = check_df['amount'].value_counts()
 
@@ -88,22 +67,7 @@ def _calculate_unique_confidence(
     check_row: pd.Series,
     date_diff: int
 ) -> float:
-    """Calculate confidence score for a unique amount match.
-
-    Confidence is based on:
-    - Amount match (always 1.0 for unique matches): weight 0.4
-    - Date proximity: weight 0.3
-    - Type agreement: weight 0.2
-    - Description similarity (basic): weight 0.1
-
-    Args:
-        bank_row: Bank transaction row
-        check_row: Check register row
-        date_diff: Absolute date difference in days
-
-    Returns:
-        Confidence score between 0 and 1
-    """
+    
     # Amount score: always perfect for unique matches
     amount_score = 1.0
 
