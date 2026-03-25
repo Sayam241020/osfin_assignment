@@ -1,0 +1,36 @@
+======================================================================
+FINANCIAL RECONCILIATION SYSTEM - PERFORMANCE REPORT
+======================================================================
+
+OVERALL METRICS
+----------------------------------------
+  Precision:  1.0000  (308/308 correct)
+  Recall:     1.0000  (308/308 found)
+  F1 Score:   1.0000
+
+LEARNED FEATURE WEIGHTS
+----------------------------------------
+  type_similarity           0.3092  ###############
+  amount_similarity         0.3091  ###############
+  date_similarity           0.1953  #########
+  text_similarity           0.1864  #########
+
+ERROR ANALYSIS
+----------------------------------------
+  Total correct matches:  308
+  Total errors:           0
+  Avg correct confidence: 0.8438
+  Avg error confidence:   0.0000
+
+
+LEARNING CURVE (Performance vs Training Data)
+------------------------------------------------------------
+    Training %   N Train   Precision    Recall        F1
+           0%         0      1.0000    1.0000    1.0000
+          20%        57      1.0000    1.0000    1.0000
+          40%       114      1.0000    1.0000    1.0000
+          60%       171      1.0000    1.0000    1.0000
+          80%       228      1.0000    1.0000    1.0000
+         100%       286      1.0000    1.0000    1.0000
+
+======================================================================

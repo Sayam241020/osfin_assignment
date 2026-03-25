@@ -1,0 +1,309 @@
+bank_id,check_id,amount,confidence,match_method,date_diff_days,bank_desc,check_desc,bank_type,check_type
+B0143,R0143,25.87,0.95,unique_amount,0,SUBSCRIPTION #8526,Music subscription,DR,DR
+B0161,R0161,1114.62,0.95,unique_amount,0,ACH TRANSFER,Transfer,DR,DR
+B0295,R0295,155.69,0.95,unique_amount,0,ATM 1569 CASH,Cash,DR,DR
+B0048,R0048,61.35,0.95,unique_amount,0,BP GAS #9226,Gas,DR,DR
+B0219,R0219,65.24,0.95,unique_amount,0,BP GAS #6423,GAS,DR,DR
+B0139,R0139,1380.54,0.95,unique_amount,0,XFER TO SAVINGS,Moved to savings,DR,DR
+B0134,R0134,1939.96,0.95,unique_amount,0,ACH TRANSFER,Transfer,DR,DR
+B0088,R0088,27.46,0.9456,unique_amount,1,RESTAURANT #1391,Restaurant,DR,DR
+B0165,R0165,72.69,0.9456,unique_amount,1,RESTAURANT #5737,Restaurant,DR,DR
+B0226,R0226,16.54,0.9333,unique_amount,0,MONTHLY FEE,Bank fee,DR,DR
+B0220,R0220,20.45,0.9333,unique_amount,0,MONTHLY FEE,Monthly charge,DR,DR
+B0083,R0083,25.64,0.9333,unique_amount,0,MONTHLY FEE,Bank fee,DR,DR
+B0284,R0284,102.72,0.9333,unique_amount,0,ATM WITHDRAWAL #1190,Cash withdrawal,DR,DR
+B0123,R0123,626.82,0.9333,unique_amount,0,ONLINE TRANSFER,Internal transfer,DR,DR
+B0278,R0278,1656.03,0.9333,unique_amount,0,ACH TRANSFER,Internal transfer,DR,DR
+B0233,R0233,186.05,0.9333,unique_amount,0,ONLINE TRANSFER,Internal transfer,DR,DR
+B0128,R0128,419.78,0.9333,unique_amount,0,INSURANCE PMT,Insurance payment,DR,DR
+B0208,R0208,1470.66,0.9333,unique_amount,0,ONLINE TRANSFER,Internal transfer,DR,DR
+B0046,R0046,112.61,0.92,unique_amount,0,ONLINE PMT GAS CO,Gas bill,DR,DR
+B0170,R0170,184.52,0.92,unique_amount,0,ONLINE PMT GAS CO,Gas bill,DR,DR
+B0096,R0096,73.28,0.9011,unique_amount,2,RESTAURANT #8215,Restaurant,DR,DR
+B0085,R0085,718.65,0.9011,unique_amount,2,CHECK #6258,Check #6258,DR,DR
+B0067,R0067,816.6,0.9011,unique_amount,2,CHECK #7863,Check #7863,DR,DR
+B0234,R0234,3074.18,0.9,unique_amount,0,DIRECT DEP PAYROLL,Monthly salary,CR,CR
+B0229,R0229,1547.53,0.9,unique_amount,0,XFER TO SAVINGS,Transfer,DR,DR
+B0255,R0255,12.71,0.9,unique_amount,0,NETFLIX,Monthly subscription,DR,DR
+B0190,R0190,15.0,0.9,unique_amount,0,SPOTIFY,Monthly subscription,DR,DR
+B0018,R0018,15.13,0.9,unique_amount,0,NETFLIX,Gym,DR,DR
+B0133,R0133,33.45,0.9,unique_amount,0,GYM MEMBERSHIP,Music subscription,DR,DR
+B0111,R0111,34.27,0.9,unique_amount,0,NETFLIX,Gym,DR,DR
+B0005,R0005,34.33,0.9,unique_amount,0,MAINT FEE,Monthly charge,DR,DR
+B0108,R0108,37.95,0.9,unique_amount,0,BP GAS #7938,Fill up,DR,DR
+B0209,R0209,42.86,0.9,unique_amount,0,SPOTIFY,Streaming service,DR,DR
+B0061,R0061,45.41,0.9,unique_amount,0,EXXON #1995,Gas station,DR,DR
+B0010,R0010,45.04,0.9,unique_amount,0,DINER #9322,Lunch,DR,DR
+B0141,R0141,46.58,0.9,unique_amount,0,SAFEWAY #7776,Food shopping,DR,DR
+B0173,R0173,58.47,0.9,unique_amount,0,CAFE #2707,Eating out,DR,DR
+B0193,R0193,60.0,0.9,unique_amount,0,SHELL #1659,Fuel,DR,DR
+B0091,R0091,68.21,0.9,unique_amount,0,DINER #7184,Dinner out,DR,DR
+B0252,R0252,72.43,0.9,unique_amount,0,DINER #5735,Restaurant,DR,DR
+B0115,R0115,73.86,0.9,unique_amount,0,KROGER #2484,GROCERY STORE,DR,DR
+B0183,R0183,79.52,0.9,unique_amount,0,BISTRO #9004,Restaurant,DR,DR
+B0040,R0040,606.93,0.9,unique_amount,0,ONLINE TRANSFER,Moved to savings,DR,DR
+B0298,R0298,97.2,0.9,unique_amount,0,CAFE #3733,Eating out,DR,DR
+B0020,R0020,114.31,0.9,unique_amount,0,safeway #4385,Food shopping,DR,DR
+B0221,R0221,117.61,0.9,unique_amount,0,ONLINE TRANSFER,Moved to savings,DR,DR
+B0172,R0172,116.54,0.9,unique_amount,0,ATM WD 6172,Cash withdrawal,DR,DR
+B0151,R0151,3730.02,0.9,unique_amount,0,ACH CREDIT SALARY,Paycheck,CR,CR
+B0254,R0254,152.41,0.9,unique_amount,0,WHOLE FOODS #9050,Groceries,DR,DR
+B0094,R0094,158.21,0.9,unique_amount,0,WHOLE FOODS #9392,Weekly groceries,DR,DR
+B0073,R0073,167.83,0.9,unique_amount,0,ONLINE PMT ELEC CO,Utilities,DR,DR
+B0136,R0136,169.84,0.9,unique_amount,0,TRADER JOES,Groceries,DR,DR
+B0163,R0163,176.44,0.9,unique_amount,0,WHOLE FOODS #4696,Groceries,DR,DR
+B0130,R0130,1720.31,0.9,unique_amount,0,XFER TO SAVINGS,Internal transfer,DR,DR
+B0057,R0057,1727.79,0.9,unique_amount,0,ACH TRANSFER,Moved to savings,DR,DR
+B0174,R0174,191.79,0.9,unique_amount,0,WHOLE FOODS #6791,Grocery store,DR,DR
+B0171,R0171,3280.91,0.9,unique_amount,0,DIRECT DEPOSIT,Monthly salary,CR,CR
+B0107,R0107,219.66,0.9,unique_amount,0,AUTO INS,Car insurance,DR,DR
+B0079,R0079,1758.17,0.9,unique_amount,0,ACH TRANSFER,Moved to savings,DR,DR
+B0051,R0051,228.0,0.9,unique_amount,0,WHOLE FOODS #4943,Weekly groceries,DR,DR
+B0105,R0105,247.31,0.9,unique_amount,0,AUTO INS,Car insurance,DR,DR
+B0150,R0150,768.69,0.9,unique_amount,0,ACH TRANSFER,Moved to savings,DR,DR
+B0023,R0023,37.42,0.9,unique_amount,0,SHELL #3558,Fuel,DR,DR
+B0197,R0197,54.7,0.9,unique_amount,0,DINER #2986,Eating out,DR,DR
+B0266,R0266,58.8,0.9,unique_amount,0,BISTRO #6600,Lunch,DR,DR
+B0301,R0301,306.53,0.9,unique_amount,0,MISC TRANSACTION 5014,Other expense,DR,DR
+B0269,R0269,2874.78,0.9,unique_amount,0,DIRECT DEPOSIT,MONTHLY SALARY,CR,CR
+B0210,R0210,63.99,0.9,unique_amount,0,BISTRO #9155,Dinner out,DR,DR
+B0159,R0159,1357.67,0.9,unique_amount,0,XFER TO SAVINGS,Transfer,DR,DR
+B0025,R0025,4437.99,0.9,unique_amount,0,DIRECT DEP PAYROLL,Salary,CR,CR
+B0017,R0017,72.16,0.9,unique_amount,0,bp gas #7420,Fuel,DR,DR
+B0238,R0238,392.84,0.9,unique_amount,0,INSURANCE PMT,Insuranc payment,DR,DR
+B0065,R0065,1932.97,0.9,unique_amount,0,ONLINE TRANSFER,Moved to savings,DR,DR
+B0283,R0283,946.98,0.9,unique_amount,0,XFER TO SAVINGS,Internal transfer,DR,DR
+B0032,R0032,3511.77,0.9,unique_amount,0,ACH CREDIT SALARY,Paycheck,CR,CR
+B0218,R0218,89.71,0.9,unique_amount,0,CAFE #3049,Eating out,DR,DR
+B0236,R0236,94.15,0.9,unique_amount,0,RESTAURANT #1098,Dinner out,DR,DR
+B0055,R0055,3043.43,0.9,unique_amount,0,DIRECT DEPOSIT,Paycheck,CR,CR
+B0306,R0306,496.62,0.9,unique_amount,0,MISC TRANSACTION 2409,Other expense,DR,DR
+B0103,R0103,48.16,0.8956,unique_amount,1,SUBSCRIPTION #4840,Music subscription,DR,DR
+B0036,R0036,407.01,0.8956,unique_amount,1,XFER TO SAVINGS,moved to savings,DR,DR
+B0147,R0147,1482.02,0.8956,unique_amount,1,ONLINE TRANSFER,Transfer,DR,DR
+B0237,R0237,23.3,0.879,unique_amount,1,MONTHLY FEE,Monthly charge,DR,DR
+B0080,R0080,51.94,0.879,unique_amount,1,ATM 9006 CASH,Cash withdrawal,DR,DR
+B0169,R0169,46.59,0.879,unique_amount,1,online order #8392,Online purchase,DR,DR
+B0070,R0070,52.42,0.879,unique_amount,1,BP GAS #1878,Gas station,DR,DR
+B0189,R0189,103.15,0.879,unique_amount,1,ONLINE ORDER #7287,Online shopping,DR,DR
+B0260,R0260,126.19,0.879,unique_amount,1,ATM WITHDRAWAL #9754,Cash withdrawal,DR,DR
+B0059,R0059,207.28,0.879,unique_amount,1,ATM WD 1161,ATM cash,DR,DR
+B0246,R0246,208.63,0.879,unique_amount,1,ATM WITHDRAWAL #5493,ATM cash,DR,DR
+B0045,R0045,220.13,0.879,unique_amount,1,EBAY PURCHASE,Online purchase,DR,DR
+B0063,R0063,229.96,0.879,unique_amount,1,AMAZON.COM,Amazon order,DR,DR
+B0101,R0101,264.14,0.879,unique_amount,1,ONLINE ORDER #056,Online shopping,DR,DR
+B0261,R0261,270.02,0.879,unique_amount,1,AMAZON.COM,Amazon order,DR,DR
+B0060,R0060,273.47,0.879,unique_amount,1,ONLINE ORDER #5297,Amazon order,DR,DR
+B0050,R0050,887.44,0.879,unique_amount,1,ONLINE TRANSFER,Internal transfer,DR,DR
+B0027,R0027,394.11,0.879,unique_amount,1,ONLINE TRANSFER,Internal transfer,DR,DR
+B0214,R0214,175.28,0.8706,unique_amount,1,ONLINE PMT WATER,Water bill,DR,DR
+B0166,R0166,4082.76,0.8706,unique_amount,1,ACH CREDIT SALARY,Monthly salary,CR,CR
+B0204,R0204,1534.43,0.8656,unique_amount,1,XFER TO SAVINGS,Moved to savngs,DR,DR
+B0008,R0008,648.22,0.8511,unique_amount,2,CHECK #5426,Check payment,DR,DR
+B0267,R0267,4096.11,0.8456,unique_amount,1,DIRECT DEP PAYROLL,Income,CR,CR
+B0168,R0168,12.78,0.8456,unique_amount,1,SERVICE CHARGE,Bank fee,DR,DR
+B0178,R0178,13.15,0.8456,unique_amount,1,NETFLIX,GYM,DR,DR
+B0199,R0199,19.92,0.8456,unique_amount,1,NETFLIX,Gym,DR,DR
+B0274,R0274,23.38,0.8456,unique_amount,1,NETFLIX,Gym,DR,DR
+B0253,R0253,21.52,0.8456,unique_amount,1,SERVICE CHARGE,Bank fee,DR,DR
+B0042,R0042,24.04,0.8456,unique_amount,1,GYM MEMBERSHIP,Music subscription,DR,DR
+B0235,R0235,32.62,0.8456,unique_amount,1,CAFE #6592,Restaurant,DR,DR
+B0077,R0077,34.51,0.8456,unique_amount,1,SERVICE CHARGE,Bank fee,DR,DR
+B0250,R0250,32.86,0.8456,unique_amount,1,SERVICE CHARGE,Bank fee,DR,DR
+B0300,R0300,44.43,0.8456,unique_amount,1,SUBSCRIPTION #8455,Streaming service,DR,DR
+B0072,R0072,45.15,0.8456,unique_amount,1,DINER #5859,Restaurant,DR,DR
+B0047,R0047,46.48,0.8456,unique_amount,1,BP GAS #1775,Fill up,DR,DR
+B0100,R0100,49.53,0.8456,unique_amount,1,NETFLIX,Monthly subscription,DR,DR
+B0037,R0037,58.3,0.8456,unique_amount,1,CHEVRON #9838,Gas,DR,DR
+B0012,R0012,59.39,0.8456,unique_amount,1,CAE #1769,Eating out,DR,DR
+B0122,R0122,59.07,0.8456,unique_amount,1,SAFEWAY #7019,Food shopping,DR,DR
+B0086,R0086,59.64,0.8456,unique_amount,1,TRADER JOES,Grocery store,DR,DR
+B0285,R0285,68.26,0.8456,unique_amount,1,BISTRO #1980,Restaurant,DR,DR
+B0114,R0114,68.22,0.8456,unique_amount,1,EXXON #8035,Gas station,DR,DR
+B0215,R0215,67.74,0.8456,unique_amount,1,CHEVRON #1262,Gas station,DR,DR
+B0053,R0053,73.0,0.8456,unique_amount,1,EXXON #4073,Fill up,DR,DR
+B0035,R0035,71.21,0.8456,unique_amount,1,SHELL #4556,Fill up,DR,DR
+B0137,R0137,81.04,0.8456,unique_amount,1,online pmt water,utilities,DR,DR
+B0007,R0007,85.39,0.8456,unique_amount,1,DINER #1466,Restaurant,DR,DR
+B0090,R0090,88.66,0.8456,unique_amount,1,DINER #4561,Eating out,DR,DR
+B0154,R0154,89.5,0.8456,unique_amount,1,DINER #4763,Dinner out,DR,DR
+B0155,R0155,93.75,0.8456,unique_amount,1,CAFE #6232,Restaurant,DR,DR
+B0202,R0202,94.11,0.8456,unique_amount,1,DINER #9680,Dinner out,DR,DR
+B0044,R0044,97.22,0.8456,unique_amount,1,WHOLE FOODS #7235,food shopping,DR,DR
+B0024,R0024,102.1,0.8456,unique_amount,1,WHOLE FOODS #8849,Weekly groceries,DR,DR
+B0162,R0162,98.92,0.8456,unique_amount,1,BISTRO #2636,Lunch,DR,DR
+B0097,R0097,102.95,0.8456,unique_amount,1,DINER #3454,Eating out,DR,DR
+B0034,R0034,100.83,0.8456,unique_amount,1,TRADER JOES,Food shopping,DR,DR
+B0305,R0305,111.02,0.8456,unique_amount,1,MISC TRANSACTION 1154,Other expense,DR,DR
+B0192,R0192,115.93,0.8456,unique_amount,1,TRADER JOES,Groceries,DR,DR
+B0297,R0297,1144.48,0.8456,unique_amount,1,ONLINE TRANSFER,Moved to savings,DR,DR
+B0121,R0121,128.47,0.8456,unique_amount,1,AAZON.COM,Online shopping,DR,DR
+B0228,R0228,138.27,0.8456,unique_amount,1,TRADER JOES,Weekly groceries,DR,DR
+B0184,R0184,147.3,0.8456,unique_amount,1,WHOLE FOODS #3931,Grocery store,DR,DR
+B0287,R0287,158.14,0.8456,unique_amount,1,KROGER #7102,Weekly groceries,DR,DR
+B0021,R0021,171.26,0.8456,unique_amount,1,HEALTH INS PMT,Car insurance,DR,DR
+B0002,R0002,36.27,0.8456,unique_amount,1,CHEVRON #1860,Gas,DR,DR
+B0271,R0271,185.49,0.8456,unique_amount,1,TRADER JOES,Grocery store,DR,DR
+B0132,R0132,185.8,0.8456,unique_amount,1,WHOLE FOODS 4157,Groceries,DR,DR
+B0279,R0279,191.62,0.8456,unique_amount,1,WHOLE FOODS #1301,Weekly groceries,DR,DR
+B0248,R0248,187.6,0.8456,unique_amount,1,KROGER #4987,Food shopping,DR,DR
+B0019,R0019,191.15,0.8456,unique_amount,1,TRADER JOES,Weekly groceries,DR,DR
+B0148,R0148,200.84,0.8456,unique_amount,1,SAFEWAY #4748,Weekly groceries,DR,DR
+B0191,R0191,202.4,0.8456,unique_amount,1,WHOLE FOODS #5282,Groceries,DR,DR
+B0292,R0292,206.55,0.8456,unique_amount,1,AMAZON.COM,Online shopping,DR,DR
+B0062,R0062,221.93,0.8456,unique_amount,1,ONLINE PMT WATER,Electric bill,DR,DR
+B0109,R0109,225.07,0.8456,unique_amount,1,ONLINE PMT GAS CO,Water bill,DR,DR
+B0001,R0001,226.34,0.8456,unique_amount,1,AMAZON.COM,Online purchase,DR,DR
+B0093,R0093,235.17,0.8456,unique_amount,1,kroger #7278,Groceries,DR,DR
+B0087,R0087,240.25,0.8456,unique_amount,1,ONLINE PMT GAS O,Utilities,DR,DR
+B0131,R0131,251.68,0.8456,unique_amount,1,AUTO INS,Health insurance,DR,DR
+B0092,R0092,51.53,0.8456,unique_amount,1,BP GAS #4099,Fill up,DR,DR
+B0098,R0098,57.08,0.8456,unique_amount,1,EXXON #9996,Gas station,DR,DR
+B0138,R0138,57.39,0.8456,unique_amount,1,DINER #6592,Dinner out,DR,DR
+B0177,R0177,57.21,0.8456,unique_amount,1,BISTRO #4510,Restaurant,DR,DR
+B0054,R0054,65.07,0.8456,unique_amount,1,BP GAS #2021,Fill up,DR,DR
+B0222,R0222,70.57,0.8456,unique_amount,1,EXXON #8158,Gas staton,DR,DR
+B0082,R0082,408.05,0.8456,unique_amount,1,AUTO INS,Health insurance,DR,DR
+B0071,R0071,2987.73,0.8456,unique_amount,1,DIRECT DEPOSIT,Monthly salary,CR,CR
+B0175,R0175,430.01,0.8456,unique_amount,1,HEALTH INS PMT,Car insurance,DR,DR
+B0068,R0068,2525.3,0.8456,unique_amount,1,ACH CREDIT SALARY,Paycheck,CR,CR
+B0038,R0038,499.15,0.8456,unique_amount,1,ONLINE TRANSFER,Moved to savings,DR,DR
+B0196,R0196,508.19,0.8348,unique_amount,4,CHECK #7546,Check #7546,DR,DR
+B0223,R0223,19.01,0.8344,unique_amount,2,EBAY PURCHASE,Online purchase,DR,DR
+B0113,R0113,40.69,0.8344,unique_amount,2,ONLINE ORDER #8721,Online shopping,DR,DR
+B0263,R0263,60.37,0.8344,unique_amount,2,ATM 1225 CASH,Cash withdrawal,DR,DR
+B0217,R0217,84.1,0.8344,unique_amount,2,ONLINE ORDER #9815,Amazon order,DR,DR
+B0241,R0241,132.86,0.8344,unique_amount,2,ONLINE ORDER #3869,Online purchase,DR,DR
+B0028,R0028,153.5,0.8344,unique_amount,2,ATM WD 3734,ATM cash,DR,DR
+B0112,R0112,194.05,0.8344,unique_amount,2,ONLINE ORDER #6977,Amazon order,DR,DR
+B0257,R0257,208.73,0.8344,unique_amount,2,ATM WITHDRAWAL #7893,Cash withdrawal,DR,DR
+B0277,R0277,209.29,0.8344,unique_amount,2,ONLINE ORDER #3327,Online shopping,DR,DR
+B0009,R0009,210.12,0.8344,unique_amount,2,AMAZON.COM,Amazon order,DR,DR
+B0135,R0135,256.47,0.8344,unique_amount,2,ONLINE ORDER #4627,Online shopping,DR,DR
+B0014,R0014,52.07,0.8344,unique_amount,2,ATM 3433 CASH,Withdrew cash,DR,DR
+B0213,R0213,283.32,0.8344,unique_amount,2,EBAY PURCHASE,Online purchase,DR,DR
+B0016,R0016,58.56,0.8344,unique_amount,2,ONLINE ORDER #6051,Online purchase,DR,DR
+B0281,R0281,341.45,0.8344,unique_amount,2,INSURANCE PMT,Health insurance,DR,DR
+B0069,R0069,195.9,0.8261,unique_amount,2,HEALTH INS PMT,Health insurance,DR,DR
+B0049,R0049,825.91,0.8146,unique_amount,3,CHECK #4152,Check payment,DR,DR
+B0294,R0294,599.42,0.8146,unique_amount,3,CHECK #7709,Check payment,DR,DR
+B0167,R0167,653.81,0.8104,unique_amount,5,CHECK #9164,Check #9164,DR,DR
+B0052,R0052,145.2,0.8104,unique_amount,5,CHECK #8555,Check #8555,DR,DR
+B0296,R0296,250.53,0.8104,unique_amount,5,CHECK #642,Check #6442,DR,DR
+B0124,R0124,19.24,0.8011,unique_amount,2,AMAZON.COM,Online purchase,DR,DR
+B0230,R0230,35.66,0.8011,unique_amount,2,CAFE #2648,Lunch,DR,DR
+B0066,R0066,43.84,0.8011,unique_amount,2,CAFE #8892,Dinner out,DR,DR
+B0043,R0043,52.84,0.8011,unique_amount,2,TRADER JOES,Grocery store,DR,DR
+B0201,R0201,54.97,0.8011,unique_amount,2,KROGER #2843,Grocery store,DR,DR
+B0146,R0146,57.25,0.8011,unique_amount,2,CAFE #6530,DINNER OUT,DR,DR
+B0081,R0081,62.46,0.8011,unique_amount,2,KROGER #3568,Food shopping,DR,DR
+B0179,R0179,65.48,0.8011,unique_amount,2,DINER #5218,Eating out,DR,DR
+B0004,R0004,65.95,0.8011,unique_amount,2,TRADER JOES,Grocery store,DR,DR
+B0075,R0075,75.44,0.8011,unique_amount,2,DINER #9684,Restaurant,DR,DR
+B0275,R0275,81.42,0.8011,unique_amount,2,TRADER JOES,Grocery store,DR,DR
+B0290,R0290,85.4,0.8011,unique_amount,2,KROGER #4394,Grocery store,DR,DR
+B0249,R0249,86.63,0.8011,unique_amount,2,DINER #7015,Eating out,DR,DR
+B0157,R0157,91.77,0.8011,unique_amount,2,RESTAURANT #7585,Eating out,DR,DR
+B0058,R0058,96.01,0.8011,unique_amount,2,CAFE #6675,Eating out,DR,DR
+B0140,R0140,99.35,0.8011,unique_amount,2,ONLINE PMT GAS CO,Utilities,DR,DR
+B0106,R0106,100.29,0.8011,unique_amount,2,RESTAURANT #1502,Eating out,DR,DR
+B0259,R0259,100.49,0.8011,unique_amount,2,AMAZON.COM,Online purchase,DR,DR
+B0015,R0015,108.21,0.8011,unique_amount,2,CAFE #6311,Dinner out,DR,DR
+B0280,R0280,112.73,0.8011,unique_amount,2,BISTRO #1606,Dinner out,DR,DR
+B0186,R0186,116.92,0.8011,unique_amount,2,DINER #1197,Dinner out,DR,DR
+B0180,R0180,118.1,0.8011,unique_amount,2,RESTAURANT #9958,Eating out,DR,DR
+B0272,R0272,131.33,0.8011,unique_amount,2,WHOLE FOODS #8339,Grocery store,DR,DR
+B0029,R0029,130.08,0.8011,unique_amount,2,ONLINE ORDER #4005,Amazon rder,DR,DR
+B0125,R0125,137.87,0.8011,unique_amount,2,ATM WITHDRAWAL #7374,Cash,DR,DR
+B0120,R0120,142.99,0.8011,unique_amount,2,ONLINE PMT ELEC CO,Water bill,DR,DR
+B0273,R0273,145.49,0.8011,unique_amount,2,AMAZON.COM,Online shopping,DR,DR
+B0095,R0095,149.32,0.8011,unique_amount,2,KROGER #4104,Weekly groceries,DR,DR
+B0247,R0247,151.63,0.8011,unique_amount,2,EBAY PURCHASE,Online shoppng,DR,DR
+B0251,R0251,158.43,0.8011,unique_amount,2,KROGER #5496,Grocery store,DR,DR
+B0033,R0033,170.39,0.8011,unique_amount,2,WHOLE FOODS #2267,Grocey store,DR,DR
+B0265,R0265,169.06,0.8011,unique_amount,2,KROGER #8022,Grocery store,DR,DR
+B0245,R0245,177.57,0.8011,unique_amount,2,TRADER JOES,Groceries,DR,DR
+B0227,R0227,186.51,0.8011,unique_amount,2,TRADER JOES,Grocery store,DR,DR
+B0039,R0039,39.68,0.8011,unique_amount,2,CAFE #9792,lunch,DR,DR
+B0187,R0187,200.63,0.8011,unique_amount,2,ONLINE PMT ELEC CO,Water bill,DR,DR
+B0258,R0258,212.12,0.8011,unique_amount,2,KROGER #2693,Groceries,DR,DR
+B0194,R0194,217.72,0.8011,unique_amount,2,whole foods #3811,Groceries,DR,DR
+B0231,R0231,44.51,0.8011,unique_amount,2,RESTAURANT #6539,Eating out,DR,DR
+B0181,R0181,228.5,0.8011,unique_amount,2,CK #5389,Check payment,DR,DR
+B0158,R0158,239.27,0.8011,unique_amount,2,SAFEWAY #2291,Food shopping,DR,DR
+B0022,R0022,291.8,0.8011,unique_amount,2,AUTO INS,Insurance payment,DR,DR
+B0203,R0203,60.07,0.8011,unique_amount,2,TRADER JOES,Groceries,DR,DR
+B0205,R0205,68.41,0.8011,unique_amount,2,CAFE #6759,Restaurant,DR,DR
+B0307,R0307,365.64,0.8011,unique_amount,2,MISC TRANSACTION 1784,Other expense,DR,DR
+B0185,R0185,187.27,0.8011,unique_amount,2,SAFEWAY #8777,Groceres,DR,DR
+B0116,R0116,88.87,0.8011,unique_amount,2,DINER #8858,Dinner out,DR,DR
+B0212,R0212,89.67,0.8011,unique_amount,2,DINER #7616,Eating out,DR,DR
+B0240,R0240,93.0,0.8011,unique_amount,2,TRADER JOES,Grocery store,DR,DR
+B0262,R0262,28.27,0.798,unique_amount,3,EBAY PURCHASE,Online purchase,DR,DR
+B0182,R0182,124.11,0.798,unique_amount,3,ONLINE ORDER #3327,Amazon order,DR,DR
+B0264,R0264,124.4,0.798,unique_amount,3,online order #5893,Online purchase,DR,DR
+B0031,R0031,145.31,0.798,unique_amount,3,AMAZON.COM,Amazon order,DR,DR
+B0104,R0104,772.09,0.798,unique_amount,3,CHECK #2028,Paid y check,DR,DR
+B0030,R0030,281.39,0.798,unique_amount,3,ONLINE ORDER #5658,Online shopping,DR,DR
+B0289,R0289,350.51,0.798,unique_amount,3,CHECK #4327,Paid by check,DR,DR
+B0216,R0216,75.99,0.7681,unique_amount,4,EBAY PURCHASE,Online purchase,DR,DR
+B0119,R0119,182.39,0.7681,unique_amount,4,EBAY PURCHASE,Online purchase,DR,DR
+B0145,R0145,40.12,0.7646,unique_amount,3,AMAZON.COM,Online shopping,DR,DR
+B0198,R0198,83.9,0.7646,unique_amount,3,EBAY PURCHASE,Amazon order,DR,DR
+B0099,R0099,92.88,0.7646,unique_amount,3,WHOLE FOODS #3731,Grocery store,DR,DR
+B0308,R0308,115.81,0.7646,unique_amount,3,MISC TRANSACTION 9096,Other expense,DR,DR
+B0041,R0041,116.68,0.7646,unique_amount,3,SAFEWAY#8513,Food shopping,DR,DR
+B0276,R0276,122.18,0.7646,unique_amount,3,EBAY PURCHASE,Online shopping,DR,DR
+B0288,R0288,126.09,0.7646,unique_amount,3,SAFEWAY #2184,Weekly groceries,DR,DR
+B0129,R0129,123.56,0.7646,unique_amount,3,EBAY PURCHASE,Online shopping,DR,DR
+B0293,R0293,130.74,0.7646,unique_amount,3,KROGER #6854,Weekly groceries,DR,DR
+B0084,R0084,137.35,0.7646,unique_amount,3,TRADER JOES,Groceries,DR,DR
+B0056,R0056,157.81,0.7646,unique_amount,3,CK #8989,Check #8989,DR,DR
+B0013,R0013,167.26,0.7646,unique_amount,3,KROGER #7949,Grocery store,DR,DR
+B0152,R0152,187.43,0.7646,unique_amount,3,AMAZON.COM,Online shopping,DR,DR
+B0142,R0142,198.14,0.7646,unique_amount,3,KROGER #6864,Food shopping,DR,DR
+B0102,R0102,205.21,0.7646,unique_amount,3,KROGER #9110,Groceries,DR,DR
+B0089,R0089,232.79,0.7646,unique_amount,3,KROGER #6892,Weekly groceries,DR,DR
+B0200,R0200,249.17,0.7646,unique_amount,3,TRADER JOES,Weekly groceries,DR,DR
+B0149,R0149,261.31,0.7646,unique_amount,3,AMAZON.COM,Online shopping,DR,DR
+B0117,R0117,275.85,0.7646,unique_amount,3,AMAZON.COM,Online purchase,DR,DR
+B0078,R0078,346.88,0.7646,unique_amount,3,CK #3062,Paid by check,DR,DR
+B0291,R0291,115.32,0.7646,unique_amount,3,AMAZON.COM,Online purchase,DR,DR
+B0003,R0003,298.4,0.7604,unique_amount,5,CHECK #6390,Check payment,DR,DR
+B0207,R0207,625.33,0.7437,unique_amount,5,CHECK #3385,Paid by check,DR,DR
+B0270,R0270,18.52,0.7348,unique_amount,4,AMAZON.COM,Online purchase,DR,DR
+B0268,R0268,105.25,0.7348,unique_amount,4,AMAZON.COM,Online shopping,DR,DR
+B0126,R0126,158.59,0.7348,unique_amount,4,AMAZON.COM,Online purchase,DR,DR
+B0211,R0211,164.76,0.7348,unique_amount,4,AMAZON.COM,Online shopping,DR,DR
+B0256,R0256,202.9,0.7348,unique_amount,4,EBAY PURCHASE,Amazon order,DR,DR
+B0144,R0144,217.21,0.7348,unique_amount,4,AMAZON.COM,Online shopping,DR,DR
+B0224,R0224,250.69,0.7348,unique_amount,4,AMAZON.COM,Online shopping,DR,DR
+B0156,R0156,51.75,0.7348,unique_amount,4,AMAZON.COM,Online shopping,DR,DR
+B0282,R0282,290.54,0.7348,unique_amount,4,EBAY PURCHASE,Amazon order,DR,DR
+B0304,R0304,307.73,0.7348,unique_amount,4,MISC TRANSACTION 8806,Other expense,DR,DR
+B0302,R0302,318.59,0.7348,unique_amount,4,MISC TRANSACTION 2686,Other expense,DR,DR
+B0243,R0243,234.3,0.7104,unique_amount,5,CK #9352,Check payment,DR,DR
+B0244,R0244,923.27,0.7104,unique_amount,5,CK #6699,Paid by check,DR,DR
+B0303,R0303,490.55,0.7104,unique_amount,5,MISC TRANSACTION 4009,Other expense,DR,DR
+B0064,R0064,57.56,0.9365,ml_hybrid,0,BP GAS #8869,Gas station,DR,DR
+B0232,R0232,57.56,0.9321,ml_hybrid,1,BP GAS #5199,Gas,DR,DR
+B0011,R0011,192.86,0.9178,ml_hybrid,1,HEALTH INS PMT,Health insurance,DR,DR
+B0006,R0006,38.17,0.9124,ml_hybrid,0,GYM MEMBERSHIP,Music subscription,DR,DR
+B0076,R0076,192.86,0.9076,ml_hybrid,0,SAFEWAY #8208,Food shopping,DR,DR
+B0026,R0026,16.58,0.9064,ml_hybrid,0,SUBSCRIPTION #3747,Gym,DR,DR
+B0239,R0239,84.75,0.9043,ml_hybrid,1,ONLINE ORDER #5973,Amazon order,DR,DR
+B0188,R0188,207.03,0.8569,ml_hybrid,1,TRADER JOES,Weekly groceries,DR,DR
+B0286,R0286,160.46,0.8561,ml_hybrid,4,CHECK #3975,Check #3975,DR,DR
+B0118,R0118,99.83,0.8555,ml_hybrid,1,ONLINE PMT GAS CO,Electric bill,DR,DR
+B0299,R0299,1762.14,0.8551,ml_hybrid,1,ONLINE TRANSFER,Move to savings,DR,DR
+B0160,R0160,192.84,0.8529,ml_hybrid,1,SAFEWAY #8554,Weekly groceries,DR,DR
+B0127,R0127,60.73,0.8511,ml_hybrid,1,EXXON #2678,Fill up,DR,DR
+B0110,R0110,147.29,0.8198,ml_hybrid,2,ONLINE PMT WATER,Electric bill,DR,DR
+B0176,R0176,221.74,0.8196,ml_hybrid,2,TRADER JOES,Groceries,DR,DR
+B0225,R0225,236.84,0.8149,ml_hybrid,2,KROGER #3255,Grocery store,DR,DR
+B0206,R0206,105.05,0.8142,ml_hybrid,2,BISTRO #7694,Restaurant,DR,DR
+B0164,R0164,105.05,0.8132,ml_hybrid,2,ONLINE PMT ELEC CO,Utilities,DR,DR
+B0153,R0153,86.38,0.8117,ml_hybrid,2,BISTRO #4304,Lunch,DR,DR
+B0242,R0242,173.42,0.8006,ml_hybrid,4,ONLINE ORDER #1956,Online purchase,DR,DR
+B0195,R0195,171.71,0.784,ml_hybrid,3,TRADER JOES,Grocery store,DR,DR
+B0074,R0074,503.36,0.7644,ml_hybrid,5,CK #9571,Paid by check,DR,DR
